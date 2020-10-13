@@ -64,11 +64,9 @@ const xAxis = d3.axisBottom(xScale)
 const yAxis = d3.axisLeft(yScale)
     .tickSize(-innerWidth)
     .tickPadding(5);
-
-const gyAxis = g.append('g').attr("class", "y axis").call(yAxis);
-const gxAxis = g.append('g').attr("class", "x axis").call(xAxis)
+g.append('g').attr("class", "y axis").call(yAxis);
+g.append('g').attr("class", "x axis").call(xAxis)
     .attr('transform', `translate(0,${innerHeight})`);
-
 
 //Form submit handle
 myForm.addEventListener('submit', formSubmit)
@@ -78,7 +76,7 @@ function formSubmit(event) {
     if (pollInput) {
         const inputValue = pollInput.value;
         myData.find(element => element.option === inputValue).votes++;
-        render(myData)
+        render(myData) //Call render function again to update our chart
     }
 }
 
