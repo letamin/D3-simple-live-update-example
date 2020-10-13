@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+}
+
+.tick line {
+  stroke: #c0c0bb;
+}
+
+.tick text,
+.title,
+.axis-label {
+  fill: #635f5d;
+}
+
+.title,
+.axis-label {
+  font-size: 2em;
+}
+
+.tick text {
+  font-size: 1.2em;
+}
+
+#myChart {
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.poll {
+  background-color: #fff;
+  color: #333;
+  width: 20vw;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.poll-body,
+.poll-header {
+  padding: 0.5rem;
+}
+
+.poll-header {
+  text-align: center;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, transparent, #333, transparent) 1;
+}
+
+.poll-body ul {
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.poll-body li label {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.poll-body li label:hover {
+  background-color: #eee;
+}
+
+.poll-radio-input {
+  margin-right: 0.5rem;
+}
+
+.poll-footer {
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.poll-footer button {
+  background-color: #777;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  width: 7rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.poll-footer button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 1200px) {
+  .poll {
+    width: 50%;
+  }
+}

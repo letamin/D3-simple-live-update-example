@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <svg id="myChart"></svg>
+    </div>
+
+    <form id="pollForm">
+        <div class="poll">
+            <div class="poll-header">
+                <h3 class="poll-title">Favorite Fruit</h3>
+            </div>
+            <div class="poll-body">
+                <ul>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Apple"
+                                class="poll-radio-input"><span>Apple</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Lemon"
+                                class="poll-radio-input"><span>Lemon</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Avocado"
+                                class="poll-radio-input"><span>Avocado</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Banana"
+                                class="poll-radio-input"><span>Banana</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Grape"
+                                class="poll-radio-input"><span>Grape</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Mango"
+                                class="poll-radio-input"><span>Mango</span></label>
+                    </li>
+                    <li>
+                        <label><input type="radio" name="pollOptions" value="Other"
+                                class="poll-radio-input"><span>Other</span></label>
+                    </li>
+                </ul>
+            </div>
+            <div class="poll-footer">
+                <button type="submit">Vote</button>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
